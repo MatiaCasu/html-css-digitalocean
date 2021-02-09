@@ -44,6 +44,10 @@ ul.list_inline li{
 ul.list_inline{
   margin: 0;
 }
+
+a{
+  color: #0065f2;
+}
 /* /MIX */
 
 /* NAV e LOGO */
@@ -162,6 +166,31 @@ div.btn_menu_nav{
 }
 /* /HERO */
 
+/* /SEZIONE 1 CUSTOMERS STORIES */
 section#customers_stories{
   background-color: #f3f5f9;
+  padding: 30px 0;
 }
+
+.customers_logo li{
+  width: calc( ( 100% / 6 ) - 4px );
+  padding: 0 10px;
+}
+
+.customers_logo li > img{
+  width: 100%;
+  max-height: 100px;
+}
+
+#customers_stories{
+  font-weight: 500;
+  color: #5b6987;
+}
+
+@media screen and (max-width: 768px) {
+  .customers_logo li{
+    width: calc( 50% - 4px);
+    padding: 0 40px;
+  }
+}
+/* /SEZIONE 1 CUSTOMERS STORIES */
