@@ -1,0 +1,99 @@
+.debug header .row div{
+  max-height: 100px;
+  border:1px solid black;
+}
+/* /DEBuG */
+
+/* RESET - BODY */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/* /RESET - BODY */
+
+/* COLOR e BACKGROUND */
+.color_blue700{
+color: #031b4f;
+}
+/* /COLOR e BACKGROUND */
+
+/* MIX */
+UL.list_inline li{
+  display: inline-block;
+}
+
+ul.list_inline{
+  margin: 0;
+}
+/* /MIX */
+
+/* NAV e LOGO */
+header{
+  padding: 10px 0;
+}
+
+.header_logo{
+  height: 40px;
+}
+
+.header_logo img{
+  width: auto;
+  height: 30px;
+  margin-top: 2px;
+}
+
+.header_nav > div{
+  display: inline-block;
+  width: calc( 50% - 2px );
+  height: 40px;
+}
+
+.header_nav .list_inline > li{
+  line-height: 40px;
+}
+
+.header_nav li{
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header_nav a{
+  color: #031b4f;
+}
+
+.header_nav a:hover{
+  color: #0065f2;
+  text-decoration: none;
+}
+
+a.sign_up_btn {
+  color: #0065f2;
+  border-color: #0065f2;
+}
+
+div.btn_menu_nav{
+  display: none;
+}
+
+@media screen and ( max-width: 991px ) {
+  .header_nav > div:not(:last-child){
+    background-color: yellow;
+    display: none;
+  }
+
+  div.btn_menu_nav{
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    color: #0065f2;
+  }
+}
+
+
+/* /NAV e LOGO */
