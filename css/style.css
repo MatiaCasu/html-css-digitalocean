@@ -1,6 +1,7 @@
 .debug .row div{
-  min-height: 100px;
+  min-height: 50px;
   border:1px solid black;
+  background-color: red;
 }
 /* /DEBuG */
 
@@ -160,3 +161,7 @@ div.btn_menu_nav{
   box-shadow: 1px 1px 1px lightgrey;
 }
 /* /HERO */
+
+section#customers_stories{
+  background-color: #f3f5f9;
+}
