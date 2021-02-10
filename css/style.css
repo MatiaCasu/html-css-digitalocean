@@ -1,6 +1,7 @@
 .debug .row div{
   min-height: 50px;
   border:1px solid black;
+  box-sizing: border-box;
 }
 
 .debug section{
@@ -18,23 +19,56 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-/* /RESET - BODY */
-p{
 
+section{
+  padding: 40px 0 30px;
+}
+/* /RESET - BODY */
+
+/* TYPO */
+h1{
+  font-size: 55px;
 }
 
 h2{
-  color: #031b4f;
+  font-size: 35px;
   font-weight: 500;
+  margin: 10px 0 30px;
 }
+
+h5{
+  font-size: 18px;
+}
+
+.pf16 p{
+  font-size: 16px;
+}
+
+.pf20 p{
+  font-size: 20px;
+}
+
+.btn {
+  font-size: 16px;
+}
+
+p{
+ color: #5b6987;
+}
+
+h2, h5{
+  color: #031c4e;
+}
+
+a{
+  color: #3c92fd;
+}
+/* /TYPO */
+
 
 /* COLOR e BACKGROUND */
 .color_white{
   color: #fff;
-}
-
-.color_blue300{
-  color: #2285fd;
 }
 
 .color_blue700{
@@ -44,7 +78,6 @@ h2{
 .bg_white{
   background-color: #fff;
 }
-
 /* /COLOR e BACKGROUND */
 
 /* MIX */
@@ -54,10 +87,6 @@ ul.list_inline li{
 
 ul.list_inline{
   margin: 0;
-}
-
-a{
-  color: #0065f2;
 }
 
 a:hover{
@@ -114,6 +143,7 @@ a:hover{
 a.sign_up_btn {
   color: #0065f2;
   border-color: #0065f2;
+  font-size: 14px;
 }
 
 div.btn_menu_nav{
@@ -142,12 +172,9 @@ div.btn_menu_nav{
   padding: 50px 0;
 }
 
-.hero_text h1{
-  font-size: 55px;
-}
-
 .hero_text p{
   font-size: 24px;
+  color: white;
 }
 
 .hero_form, .hero_form input{
@@ -191,7 +218,6 @@ div.btn_menu_nav{
 /* /SEZIONE 1 CUSTOMERS STORIES */
 section#customers_stories{
   background-color: #f3f5f9;
-  padding: 30px 0;
 }
 
 .customers_logo li{
@@ -220,11 +246,11 @@ section#customers_stories{
 /* SEZIONE 2 deploy  */
 .container.little_container{
   max-width: 90%;
+  margin-top: 20px;
 }
 
 .deploy_title{
   margin: 30px 0;
-  font-size: 20px;
 }
 
 .deploy_nav{
@@ -257,9 +283,6 @@ section#customers_stories{
   margin: 0 0 25px 20px;
 }
 
-.deploy_steps p{
-  font-size: 16px;
-}
 
 .deploy_steps h5{
   font-size: 18px;
@@ -273,5 +296,62 @@ section#customers_stories{
 
   }
 }
-
 /* /SEZIONE 2 deploy  */
+
+/* SEZIONE 3 Developers Designed */
+section#developers_designed{
+  /* background-color: #f3f5f9; */
+  background-color: lightblue;
+}
+
+.carousel_container{
+  max-width: 60%;
+  max-height: 350px;
+  margin: 50px auto;
+}
+
+.carousel_top > *{
+  float: left;
+}
+
+button.arrows_carousel{
+  font-size: 30px;
+  background-color: inherit;
+  width: 10%;
+  margin: 20% 0;
+  border: none;
+}
+
+.carousel_main{
+  margin: auto;
+  max-height: 350px;
+  position: relative;
+}
+
+img.carousel_box{
+  width: 80%;
+}
+
+.carousel_bottom{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel_bullets button{
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 1px solid #3c92fd;
+  background-color: inherit;
+}
+
+.carousel_bullets button:hover{
+  background-color: #3c92fd;
+}
+
+
+
+
+
+/* /SEZIONE 3 Developers Designed */
