@@ -21,7 +21,7 @@ body{
 }
 
 section{
-  padding: 40px 0 30px;
+  padding: 50px 0 50px;
 }
 /* /RESET - BODY */
 
@@ -38,6 +38,8 @@ h2{
 
 h5{
   font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0 10px;
 }
 
 .pf16 p{
@@ -46,10 +48,6 @@ h5{
 
 .pf20 p{
   font-size: 20px;
-}
-
-.btn {
-  font-size: 16px;
 }
 
 p{
@@ -146,8 +144,14 @@ a.sign_up_btn {
   font-size: 14px;
 }
 
+
 div.btn_menu_nav{
   display: none;
+  font-size: 30px;
+}
+
+.btn_menu_nav p{
+  color: #3c92fd;
 }
 
 @media screen and ( max-width: 991px ) {
@@ -159,7 +163,7 @@ div.btn_menu_nav{
   div.btn_menu_nav{
     display: inline-block;
     width: 100%;
-    font-size: 30px;
+
   }
 }
 /* /NAV e LOGO */
@@ -278,35 +282,26 @@ section#customers_stories{
 }
 
 .deploy_steps{
-  width: calc( 50% - 20px );
+  width: calc( 50% - 30px );
   float: left;
-  margin: 0 0 25px 20px;
-}
-
-
-.deploy_steps h5{
-  font-size: 18px;
-  font-weight: 500;
+  margin: 0 0 25px 30px;
 }
 
 @media screen and (max-width:768px) {
   .deploy_steps{
     width: 100%;
     margin-left:0;
-
   }
 }
 /* /SEZIONE 2 deploy  */
 
 /* SEZIONE 3 Developers Designed */
 section#developers_designed{
-  /* background-color: #f3f5f9; */
-  background-color: lightblue;
+  background-color: #f3f5f9;
 }
 
 .carousel_container{
   max-width: 60%;
-  max-height: 350px;
   margin: 50px auto;
 }
 
@@ -320,12 +315,6 @@ button.arrows_carousel{
   width: 10%;
   margin: 20% 0;
   border: none;
-}
-
-.carousel_main{
-  margin: auto;
-  max-height: 350px;
-  position: relative;
 }
 
 img.carousel_box{
@@ -349,9 +338,10 @@ img.carousel_box{
 .carousel_bullets button:hover{
   background-color: #3c92fd;
 }
-
-
-
-
-
 /* /SEZIONE 3 Developers Designed */
+
+/* SEZIONE 4 FEATURES */
+#features img{
+  margin-top: 25px;
+}
+/* /SEZIONE 4 FEATURES */
