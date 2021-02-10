@@ -187,7 +187,6 @@ div.btn_menu_nav{
 
 .hero_form, .hero_text{
   padding: 20px;
-  margin-left: 30px;
 }
 
 .hero_form h3{
@@ -345,3 +344,31 @@ img.carousel_box{
   margin-top: 25px;
 }
 /* /SEZIONE 4 FEATURES */
+
+/* SEZIONE 5 World_service */
+section#world_service{
+  background:  url(../img/bg-map.svg), linear-gradient( #0043b7, #002161);
+  background-size: cover;
+
+}
+
+#world_service table tr > *{
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+#world_service table{
+  margin: 0;
+}
+#world_service table td{
+  color: #8e99b0;
+}
+
+#world_service table td a{
+  color: #00d7d2;
+}
+
+
+
+
+/* /SEZIONE 5 World_service */
