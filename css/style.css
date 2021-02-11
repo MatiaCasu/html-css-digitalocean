@@ -1,5 +1,5 @@
 .debug .row div{
-  min-height: 50px;
+  min-height: 200px;
   border:1px solid black;
   box-sizing: border-box;
 }
@@ -20,8 +20,8 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-section{
-  padding: 80px 0 80px;
+section, footer{
+  padding: 70px 0 50px;
 }
 
 .margin_h30{
@@ -87,6 +87,9 @@ a{
 /* /COLOR e BACKGROUND */
 
 /* MIX */
+ul{
+  list-style: none;
+}
 ul.list_inline li{
   display: inline-block;
 }
@@ -282,7 +285,7 @@ div.btn_menu_nav{
 }
 
 .deploy_list{
-  list-style: none;
+
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -401,7 +404,50 @@ section#world_service{
 }
 /* /SEZIONE 5 World_service */
 
-/* SEZIONE 6 */
+/* SEZIONE 6 Developers Loved */
 section#get_started{
   background:linear-gradient( #0043b7, #002161);
 }
+
+div.carousel_box{
+  padding: 30px 20px
+}
+/* /SEZIONE 6 Developers Loved */
+
+/* FOOTER */
+footer#footer_section{
+  background-color: #010e28;
+}
+
+#footer_section *{
+  color: #8e99b0;
+}
+
+.social_icon i{
+  margin-right: 10px;
+}
+
+#footer_section .foot_link h6{
+  font-size: 16px;
+  margin: 20px 0 10px;
+  color: #fff;
+}
+
+.foot_link a{
+  line-height: 25px;
+}
+
+.logo_copyright img{
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* /FOOTER */
