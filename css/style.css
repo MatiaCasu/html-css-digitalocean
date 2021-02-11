@@ -21,8 +21,9 @@ body{
 }
 
 section{
-  padding: 50px 0 50px;
+  padding: 80px 0 80px;
 }
+
 .margin_h30{
   margin: 30px 0;
 }
@@ -105,29 +106,42 @@ a:hover{
 }
 /* /MIX */
 
-/* NAV e LOGO */
-.header_nav > *{
-  margin: 20px 0;
+/* BOTTONI */
+input.sign_up_btn {
+  color: #0065f2;
+  font-size: 16px;
+  border:none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 500;
 }
 
-.header_logo{
-  height: 40px;
+nav input.sign_up_btn{
+  border: 1px solid #0065f2;
+  background-color: inherit;
+  font-size: 14px;
+}
+/* BOTTONI */
+
+/* NAV e LOGO */
+.header_nav, .header_logo{
+  padding: 20px 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .header_logo img{
-  width: auto;
-  height: 30px;
-  margin-top: 22px;
+  width: 150px;
+}
+
+.header_nav{
+  width: calc( 100% - 154px )
 }
 
 .header_nav > div{
   display: inline-block;
   width: calc( 50% - 2px );
-  height: 40px;
-}
-
-.header_nav .list_inline > li{
-  line-height: 40px;
 }
 
 .header_nav li{
@@ -145,20 +159,14 @@ a:hover{
   text-decoration: none;
 }
 
-a.sign_up_btn {
-  color: #0065f2;
-  border-color: #0065f2;
-  font-size: 14px;
-}
-
-
 div.btn_menu_nav{
   display: none;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .btn_menu_nav p{
   color: #3c92fd;
+  margin: 0;
 }
 
 @media screen and ( max-width: 991px ) {
@@ -170,7 +178,6 @@ div.btn_menu_nav{
   div.btn_menu_nav{
     display: inline-block;
     width: 100%;
-
   }
 }
 /* /NAV e LOGO */
@@ -193,20 +200,20 @@ div.btn_menu_nav{
 }
 
 .hero_form, .hero_text{
+  margin: 25px;
   padding: 20px;
 }
 
 .hero_form h3{
   font-size: 40px;
-  margin: 10px 0;
 }
 
 .hero_form input{
   display: block;
-  width: 100%;
-  margin: 10px 0;
+  width: calc( 100% - 20px );
+  margin: 20px 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   border: 1px solid #e5e8ed;
 }
 
@@ -216,12 +223,27 @@ div.btn_menu_nav{
 
 .sign_google{
   background-image: url(../img/google-icon.png);
-  background-size: 30px 30px;
-  background-position: 5px center;
+  background-size: 20px 20px;
+  background-position: 2px center;
   background-repeat: no-repeat;
   background-color: inherit;
   font-weight: 500;
   box-shadow: 1px 1px 1px lightgrey;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  .hero_form h3{
+    font-size: 25px;
+  }
+
+  .hero_form input{
+    font-size: 14px;
+  }
+
+  input.sign_google{
+    padding-left: 25px;
+  }
+
 }
 /* /HERO */
 
@@ -308,7 +330,7 @@ button.arrows_carousel{
   background-color: inherit;
   width: 5%;
   border: none;
-  vertical-align: middle;  
+  vertical-align: middle;
 }
 
 .carousel_box{
@@ -354,7 +376,7 @@ button.arrows_carousel{
 
 /* SEZIONE 5 World_service */
 section#world_service{
-  background:  url(../img/bg-map.svg), linear-gradient( #0043b7, #002161);
+  background: url(../img/bg-map.svg), linear-gradient( #0043b7, #002161);
   background-size: cover;
 }
 
@@ -378,3 +400,8 @@ section#world_service{
   color: #00d7d2;
 }
 /* /SEZIONE 5 World_service */
+
+/* SEZIONE 6 */
+section#get_started{
+  background:linear-gradient( #0043b7, #002161);
+}
