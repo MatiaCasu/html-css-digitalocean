@@ -54,10 +54,6 @@ h5{
   font-size: 20px;
 }
 
-p{
- color: #5b6987;
-}
-
 h2, h5{
   color: #031c4e;
 }
@@ -74,7 +70,7 @@ a{
 }
 
 .color_blue700{
- color: #031b4f;
+  color: #031b4f;
 }
 
 .bg_white{
@@ -419,7 +415,7 @@ footer#footer_section{
   background-color: #010e28;
 }
 
-#footer_section *{
+#footer_section.footer_link li{
   color: #8e99b0;
 }
 
@@ -441,7 +437,72 @@ footer#footer_section{
   margin: 10px 0;
 }
 
+/* SQUALETTO SAMMY */
+.sammy_area > *{
+  margin: 30px 0;
+}
 
+.sammy_shark{
+  float: right;
+  background-color: #0043b7;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.sammy_shark img{
+  width: 80px;
+}
+
+.sammy_text{
+  max-width: 350px;
+  float: right;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sammy_text > p{
+  color: #031b4f;
+}
+
+
+.sammy_says::after, .sammy_says::before{
+  float: right;
+  color: #fff;
+  position: relative;
+  top: 10px;
+}
+
+.sammy_says::before{
+  content: "\25BA";
+  right: 3px;
+}
+
+.sammy_says::after{
+  content: "\25C4";
+  left: 3px;
+  display: none;
+}
+@media screen and ( max-width:991px ){
+  .sammy_says, .sammy_shark{
+    float: left;
+  }
+
+  .sammy_says::after{
+    display: inline;
+  }
+
+  .sammy_says::before{
+    display: none;
+  }
+
+  .sammy_shark{
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+/* /SQUALETTO SAMMY */
 
 
 
