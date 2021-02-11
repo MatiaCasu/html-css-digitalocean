@@ -300,19 +300,21 @@ div.btn_menu_nav{
 }
 
 .carousel_top > *{
-  float: left;
+  display: inline-block;
 }
 
 button.arrows_carousel{
   font-size: 30px;
   background-color: inherit;
   width: 5%;
-  margin: 25% 0;
   border: none;
+  vertical-align: middle;  
 }
 
 .carousel_box{
-  width: 90%;
+  width: calc( 90% - 7px );
+  background-color: white;
+  vertical-align: middle;
 }
 
 .carousel_bottom{
@@ -359,6 +361,10 @@ section#world_service{
 #world_service table tr > *{
   border: 0;
   border-bottom: 1px solid white;
+}
+
+#world_service table tr:last-child > *{
+  border-bottom: 0;
 }
 
 #world_service table{
