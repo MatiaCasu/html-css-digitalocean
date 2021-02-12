@@ -303,8 +303,10 @@ div.btn_menu_nav{
 }
 
 .deploy_steps{
-  width: calc( 50% - 30px );
-  float: left;
+  width: calc( 50% - 36px );
+  /* float: left; */
+  display: inline-block;
+  vertical-align: top;
   margin: 0 0 25px 30px;
 }
 
