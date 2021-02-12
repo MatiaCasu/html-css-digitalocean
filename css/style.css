@@ -23,10 +23,6 @@ body{
 section, footer{
   padding: 70px 0 50px;
 }
-
-.margin_h30{
-  margin: 30px 0;
-}
 /* /RESET - BODY */
 
 /* TYPO */
@@ -67,19 +63,27 @@ h2, h5{
 }
 
 .c_lightblue{
-  color: #031b4f;
+  color: #2285fd;
+}
+
+.c_darkblue{
+  color: #031c4e;
 }
 
 .c_grey{
-
+  color: #5c6a88;
 }
 
 .c_lightgrey{
-
+  color: #828ca2;
 }
 
 .bg_white{
   background-color: #fff;
+}
+
+.bg_lightblue{
+  background-color: #2285fd;
 }
 
 .bg_lightgrey{
@@ -112,7 +116,7 @@ a:hover{
 
 /* BOTTONI */
 input.sign_up_btn {
-  color: #0065f2;
+  /* color: #2285fd; */
   font-size: 16px;
   border:none;
   padding: 10px 15px;
@@ -122,7 +126,7 @@ input.sign_up_btn {
 }
 
 nav input.sign_up_btn{
-  border: 1px solid #0065f2;
+  border: 1px solid #2285fd;
   background-color: inherit;
   font-size: 14px;
 }
@@ -154,12 +158,8 @@ nav input.sign_up_btn{
   font-weight: 400;
 }
 
-.header_nav a{
-  color: #031b4f;
-}
-
 .header_nav a:hover{
-  color: #0065f2;
+  color: #2285fd;
   text-decoration: none;
 }
 
@@ -169,7 +169,6 @@ div.btn_menu_nav{
 }
 
 .btn_menu_nav p{
-  color: #3c92fd;
   margin: 0;
 }
 
@@ -196,7 +195,6 @@ div.btn_menu_nav{
 
 .hero_text p{
   font-size: 24px;
-  color: white;
 }
 
 .hero_form, .hero_form input{
@@ -221,8 +219,10 @@ div.btn_menu_nav{
   border: 1px solid #e5e8ed;
 }
 
-.sign_account{
-  background-color: #2285fd;
+.hero_form p > a:hover{
+  color: #2285fd;
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 .sign_google{
@@ -247,7 +247,6 @@ div.btn_menu_nav{
   input.sign_google{
     padding-left: 25px;
   }
-
 }
 /* /HERO */
 
@@ -262,9 +261,8 @@ div.btn_menu_nav{
   max-height: 100px;
 }
 
-#customers_stories{
+#customers_stories p{
   font-weight: 500;
-  color: #5b6987;
 }
 
 @media screen and (max-width: 768px) {
@@ -286,13 +284,8 @@ div.btn_menu_nav{
 }
 
 .deploy_list{
-
   font-size: 16px;
   margin-bottom: 20px;
-}
-
-.deploy_list a{
-  color: #5b6987;
 }
 
 .deploy_list li{
@@ -303,6 +296,10 @@ div.btn_menu_nav{
 
 .deploy_list li:hover{
   border-left: 1px solid  #2285fd;
+}
+
+.deploy_list li a:hover{
+  color: #828ca2;
 }
 
 .deploy_steps{
@@ -335,6 +332,11 @@ button.arrows_carousel{
   width: 5%;
   border: none;
   vertical-align: middle;
+  color: #5c6a88;
+}
+
+button.arrows_carousel:hover{
+  color: #031c4e;
 }
 
 .carousel_box{
@@ -386,22 +388,22 @@ section#world_service{
 
 #world_service table tr > *{
   border: 0;
-  border-bottom: 1px solid white;
 }
 
-#world_service table tr:last-child > *{
-  border-bottom: 0;
+#world_service table tr:not(:last-child){
+  border-bottom: 1px solid white;
 }
 
 #world_service table{
   margin: 0;
 }
-#world_service table td{
-  color: #8e99b0;
-}
 
 #world_service table td a{
   color: #00d7d2;
+}
+
+#world_service table td a:hover{
+  color: #0043b7;
 }
 /* /SEZIONE 5 World_service */
 
@@ -420,8 +422,8 @@ footer#footer_section{
   background-color: #010e28;
 }
 
-#footer_section.footer_link li{
-  color: #8e99b0;
+#footer_section a:hover{
+  color: #fff;
 }
 
 .social_icon i{
@@ -468,10 +470,6 @@ footer#footer_section{
   max-width: 500px;
 }
 
-.sammy_text > p{
-  color: #031b4f;
-}
-
 .sammy_says::before{
   color: #fff;
   position: relative;
@@ -498,8 +496,6 @@ footer#footer_section{
     content: "\25C4";
     left: 3px;
   }
-
 }
-
 /* /SQUALETTO SAMMY */
 /* /FOOTER */
