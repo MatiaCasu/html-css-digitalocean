@@ -58,19 +58,24 @@ h2, h5{
   color: #031c4e;
 }
 
-a{
-  color: #3c92fd;
-}
 /* /TYPO */
 
 
 /* COLOR e BACKGROUND */
-.color_white{
+.c_white{
   color: #fff;
 }
 
-.color_blue700{
+.c_lightblue{
   color: #031b4f;
+}
+
+.c_grey{
+
+}
+
+.c_lightgrey{
+
 }
 
 .bg_white{
@@ -438,8 +443,11 @@ footer#footer_section{
 }
 
 /* SQUALETTO SAMMY */
-.sammy_area > *{
-  margin: 30px 0;
+.sammy_area{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
 }
 
 .sammy_shark{
@@ -447,7 +455,6 @@ footer#footer_section{
   background-color: #0043b7;
   border-radius: 5px;
   padding: 10px;
-  margin-right: 20px;
 }
 
 .sammy_shark img{
@@ -455,60 +462,44 @@ footer#footer_section{
 }
 
 .sammy_text{
-  max-width: 350px;
   float: right;
   border-radius: 5px;
   padding: 10px;
+  max-width: 500px;
 }
 
 .sammy_text > p{
   color: #031b4f;
 }
 
-
-.sammy_says::after, .sammy_says::before{
-  float: right;
+.sammy_says::before{
   color: #fff;
   position: relative;
   top: 10px;
-}
-
-.sammy_says::before{
+  float: right;
   content: "\25BA";
   right: 3px;
 }
 
-.sammy_says::after{
-  content: "\25C4";
-  left: 3px;
-  display: none;
-}
 @media screen and ( max-width:991px ){
-  .sammy_says, .sammy_shark{
+  .sammy_area{
+    left: 20px;
+  }
+
+  .sammy_says, .sammy_shark, .sammy_says::before{
     float: left;
   }
 
-  .sammy_says::after{
-    display: inline;
+  .sammy_text{
+    max-width: 300px;
   }
 
   .sammy_says::before{
-    display: none;
+    content: "\25C4";
+    left: 3px;
   }
 
-  .sammy_shark{
-    margin-right: 0;
-    margin-left: 20px;
-  }
 }
 
 /* /SQUALETTO SAMMY */
-
-
-
-
-
-
-
-
 /* /FOOTER */
