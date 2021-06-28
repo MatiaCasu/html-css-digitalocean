@@ -1,14 +1,3 @@
-.debug .row div{
-  min-height: 200px;
-  border:1px solid black;
-  box-sizing: border-box;
-}
-
-.debug section{
-  margin-bottom: 100px;
-}
-/* /DEBuG */
-
 /* RESET - BODY */
 *{
   margin: 0;
